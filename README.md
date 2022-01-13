@@ -9,3 +9,5 @@ A front-end web application that displays daily images of NASA's Astronomy Pictu
 4. Saves likes if the user leaves the page or refreshes locally using Javascript --> localStorage.
 5. Animated like button of a font-awesome heart!
 6. Loading state when data is pulled from the API.
+
+Check out the page on the url: https://mariapapadimitriou.github.io/spacestagram/
