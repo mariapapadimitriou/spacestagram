@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacestagram</title>
+    <link rel="stylesheet" type="text/css" href="site.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4ba8d40944.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="topnav">
+        <div class="row" style="justify-content: space-evenly;">
+            <div class="col" style="justify-content: flex-start;">
+                <div style="font-size: 40px;">Spacestagram&nbsp;<i class="fas fa-meteor"></i></div>
+                <div style="font-size: 13px;">Where the photos are out of this world!</div>
+            </div>
+            
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="startdate" class="labels">Start Date:</label>
+                        <input class="datepicker" name="startdate" id="startdate" type="date" value = "2022-01-01" min="1995-06-16">
+                    </div>
+                    <div class="col">
+                        <label for="enddate" class="labels">End Date:</label>
+                        <input class="datepicker" name="enddate" id="enddate" type="date">
+                    </div>
+                    <div class="col">
+                        <input type="submit" id="submitbutton" class = "submitbutton" value="Submit" onclick="fetchNASAData()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="loader" id="loader"></div>    
+    <main class="container" id="container"></main>
+
+    <script type="text/javascript" src="site.js"></script>
+
+    <script>
+
+    $(function(){
+        var dtToday = new Date();
+        $('#enddate').attr('value', dtToday.toISOString().split('T')[0]);
+        $('#enddate').attr('max', dtToday.toISOString().split('T')[0]);
+    });
+    
+    window.onload = fetchNASAData()
+
+</script>
+
+  </body>
+</html>

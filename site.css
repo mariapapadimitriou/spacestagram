@@ -1,0 +1,186 @@
+html {
+    font-family: "Nunito";
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: "Nunito";
+  background-image: url('space.jpg');
+}
+
+main {
+  padding: 20px;
+}
+
+.topnav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #353535;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
+
+.topnav span {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+  font-size: 0.8rem;
+  width: 500px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.datepicker {
+    margin-top: 10px;
+    margin-left: -2px;
+    font-family: "Nunito";
+    border-radius: 12px;
+    padding: 3px;
+    width: fit-content;
+    border: 1px solid black;
+    color: black;
+}
+
+.picture-explanation-container {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.picture-explanation-container p {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: flex;
+    margin-top: 50%;
+    margin: 25% auto auto auto;
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #2b2d42;
+    width: 100px;
+    height: 100px;
+    animation: spinner 4s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .likebutton {
+      background-color: transparent;
+      border: none;
+  }
+
+  .likebutton:hover {
+    cursor:pointer;
+  }
+
+  .posts {
+      border-radius: 20px;
+  }
+
+  .submitbutton {
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      border-radius: 20px;
+      border: none;
+      font-family: "Nunito";
+      padding: 5px;
+      width: 100px;
+      font-weight: bold;
+  }
+
+  .submitbutton:hover {
+    cursor:pointer;
+  }
+
+  .labels {
+      font-size: 12px;
+      color: black;
+  }
+
+  @media screen and (max-width:1024px) {
+    .picture-explanation-container p {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .picture-explanation-container {
+        width: 60%;
+    }
+
+    .topnav .row {
+        margin: 10px;
+    }
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 18px; 
+    width: 50px;
+    height: 50px;
+    font-family: "Nunito";
+  }
+  
+  #myBtn:hover {
+    background-color: black; /* Add a dark-grey background on hover */
+    color: white;
+  }
