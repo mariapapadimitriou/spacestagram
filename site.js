@@ -12,7 +12,8 @@ form.addEventListener('submit', function(e) {
     document.getElementById("container").innerHTML = "";
     const start_date = document.getElementById("startdate").value
     const end_date = document.getElementById("enddate").value
-    const url = 'https://api.nasa.gov/planetary/apod?api_key=Pn6n7cAA8J98ENsRARlPzwvZtylqc22u47GSb3px&start_date=' + start_date + '&end_date=' + end_date
+    
+    const url = 'https://api.nasa.gov/planetary/apod?api_key=0pGY5v8sAphcSRyVocADwQBcFh6jaaP2WHa8dkMM&start_date=' + start_date + '&end_date=' + end_date
     
     try {
       const response = await fetch(`${url}`)
