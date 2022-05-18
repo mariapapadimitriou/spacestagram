@@ -46,6 +46,9 @@
 
     $(function(){
         var dtToday = new Date();
+
+        //$('#enddate').attr('value', dtToday.toISOString().split('T')[0]);
+
         $('#enddate').attr('value', dtToday.toISOString().split('T')[0]);
         $('#enddate').attr('max', dtToday.toISOString().split('T')[0]);
     });

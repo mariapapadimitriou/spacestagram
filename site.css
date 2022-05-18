@@ -58,12 +58,11 @@ form {
 
 .datepicker {
     margin-top: 10px;
-    margin-left: -2px;
     font-family: "Nunito";
-    border-radius: 12px;
+    border-radius: 5px;
     padding: 3px;
     width: fit-content;
-    border: 1px solid black;
+    border: 2px solid black;
     color: black;
 }
 
@@ -128,12 +127,13 @@ form {
       background-color: black;
       color: white;
       font-size: 15px;
-      border-radius: 20px;
+      border-radius: 5px;
       border: none;
       font-family: "Nunito";
       padding: 5px;
-      width: 100px;
+      width: 120px;
       font-weight: bold;
+      height: 50px;
   }
 
   .submitbutton:hover {
@@ -143,6 +143,7 @@ form {
   .labels {
       font-size: 12px;
       color: black;
+      font-weight: bold;
   }
 
   @media screen and (max-width:1024px) {
